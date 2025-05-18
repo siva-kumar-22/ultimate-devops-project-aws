@@ -33,3 +33,7 @@ sudo docker run hello-world
 ```
 
 **Note: If you are planning to install Docker on any other distributions of linux or other operating systems like Windows, please follow the official documentation for steps.**
+Here docker commands should be used with "**sudo**" because we haven't added the "**ubuntu**" user to docker group
+To add ubuntu user to the docekr group:
+sudo usermod -aG docker ubuntu
+Now restat the docker service you can able to perform docker commands woth sudo.
